@@ -1,4 +1,4 @@
-package main
+package fewrequests_test
 
 import (
 	"fmt"
@@ -8,9 +8,9 @@ import (
 	"github.com/lvignoli/fewrequests"
 )
 
-func main() {
+func ExampleListenAndServeN() {
 	helloHandler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintln(w, "Hello.")
+		fmt.Fprintln(w, "Hello,")
 	})
 
 	worldHandler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
