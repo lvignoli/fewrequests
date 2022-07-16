@@ -1,4 +1,4 @@
-// Package singlereq
+// Package singlereq provides HTTP servers that listens for a few requests.
 package fewrequests
 
 import (
